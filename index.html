@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="description" content="Nuevos projectos inmobiliarios en mexico">
+    <meta name='keywords' content='Mexico,projectos,inmobiliario'>
+    <meta name='audience' content="all">
+    <meta name="robots" content='index, all, follow'>
+    <meta itemprop="telephone" content="+12 34 567 890">
+    <meta itemprop="name" content="airhitct">
+    <link rel="icon" type="image/" href="/images/favicon.ico">
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+      integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    />
+    
+    <title>Landing Page</title>
+  </head>
+  <body>
+    <!--Header-->
+    <header>
+      <nav>
+        <div id="menu-bar">
+          <div id="menu" onclick="onClickMenu()">
+            <div id="bar1" class="bar"></div>
+            <div id="bar2" class="bar"></div>
+            <div id="bar3" class="bar"></div>
+          </div>
+          <ul class="nav" id="nav">
+            <li ><a onclick="onClickMenu()" href="/"> Home</a></li>
+            <li ><a onclick="onClickMenu()"href="#about"> About Us</a></li>
+            <li ><a onclick="onClickMenu()"href="#projects"> Works </a></li>
+            <li ><a onclick="onClickMenu()"href="#contact">Find us</a></li>
+          </ul>
+       </div>
+        
+        <div id="logo">
+          <a href="/">
+            <img src="/images/logo.png" alt="logo" />
+          </a>
+        </div>
+        
+        <div id="contacto">
+          <a href="#contact"
+            ><i class="far fa-envelope"></i><span>Contact</span></a
+          >
+        </div>
+      </nav>
+    </header>
+    <!-- fin Header-->
+
+    <!--Main-->
+    <main id="main" data-aos="fade-right"
+    data-aos-offset="300"
+    data-aos-easing="ease-in-sine"
+ >
+      <img src="/images/fondo.png" alt="" />
+      <div class="texto" data-aos="fade-left"
+      data-aos-anchor="#example-anchor"
+      data-aos-offset="500"
+      data-aos-duration="3000" >
+        <p><b> delicated to the future</b></p>
+      </div>
+    </main>
+    <!--fin main-->
+
+    <!--About-->
+    <section id="about">
+      <div class="texto-centrado" data-aos="zoom-out-up">
+        <p>
+          Mauris totor leo, volutpat ut lacus at, maximus eleifend dolor.<b
+            >Orci varius na- toque penatibus et magnis dis
+          </b>
+          parturient montes, nascetur ridiculus mus.
+        </p>
+      </div>
+      <br>
+      <div class="tres-parrafos" >
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque est,
+          repellat facilis, aliquid perspiciatis aperiam dignissimos quas, eaque
+          pariatur voluptatum eius deserunt minus ea corporis beatae quisquam
+          facere aut a?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse fuga qui
+          id quam, omnis rerum odit, rem cumque reprehenderit dolore ducimus,
+          dicta ea nihil nisi. Quae dicta commodi est obcaecati!
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
+          perspiciatis dignissimos expedita, sint animi sequi consequatur iusto
+          inventore ipsam atque et modi, asperiores possimus excepturi magni ea
+          aliquid laboriosam at!
+        </p>
+      </div>
+    </section>
+
+    <!--fin about-->
+
+    <!--projects-->
+
+    <section id="projects">
+      <div class="carousel" >
+        <div class="carousel__contenedor">
+          <div class="carousel__lista owl-carousel">
+            <div class="carousel__elemento">
+              <img src="/images/propiedad1.png" alt="proyecto1" />
+              <div class="titulo-imagen">
+                <h3><b>project name</b></h3>
+                <p>Vivamus inperdiet hendrerit leo quis fringilla</p>
+              </div>
+              <div id="modal1" class="modal">
+                <div class="flex" id="flex">
+                  <div class="contenido-modal"><a href="/"></a></div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel__elemento">
+              <img src="/images/propiedad2.png" alt="proyecto1" />
+              <div class="titulo-imagen">
+                <h3><b>project name</b></h3>
+                <p>Vivamus inperdiet hendrerit leo quis fringilla</p>
+              </div>
+            </div>
+            <div class="carousel__elemento">
+              <img src="/images/propiedad3.png" alt="proyecto1" />
+              <div class="titulo-imagen">
+                <h3><b>project name</b></h3>
+                <p>Vivamus inperdiet hendrerit leo quis fringilla.</p>
+              </div>
+            </div>
+          </div>
+      </div>
+    </section>
+
+    <!--fin projects-->
+
+    <!--contacto-->
+    <section id="contact" >
+      <div class="datos" data-aos="zoom-out-right">
+        <div class="informacion">
+          <h3>Contact us via email, phone or come by into our office!</h3>
+          <br>
+          <p><i class="far fa-envelope"></i>
+           <span> info@airhitect.com</span></p>
+          <br>
+          <p><i class="fas fa-phone-volume"></i><span> +12 34 567 890</span> <br>
+         <span>+09 87 654 321</span></p>
+            <br>
+            <p><i class="fas fa-home"></i><span> 1012 Budapest
+              Márvány utca 16</span> </p>
+        </div>
+        <div class="redes-sociales">
+          <div class="redes">
+            <i class="fab fa-linkedin"></i>
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-google-plus-g"></i>
+
+        </div>
+          <div class="job">
+            <p><b> We are hiring!</b> <br>
+               <p>
+              We are looking for new talents to our team! If you think you are the right person for AIRhitect send us an email with your 
+              CV and portfolio. Don’t forget to write a little about yourself! </p>
+        <br>   
+        <a href="job@airhitect.com"> job@airhitect.com</a></p>
+          </div>
+        </div>
+      <div class="formulario">
+        <form action="">
+          <input type="text" placeholder="Name"><label for="" ></label>
+          <br>
+          <input type="email"placeholder="E-Mail"><label for=""></label>
+          <br>
+          <input type="text" placeholder="Subject"><label for=""></label>
+          <br>
+          <textarea name="textarea" id="textarea" cols="80" rows="5" placeholder="Message"></textarea>
+          <button>Send Message</button>
+        </form>
+      </div>
+      
+      </div>
+      <div id="map" ></div>
+     
+    </section>
+   
+
+     <!--Scripts-->
+
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
