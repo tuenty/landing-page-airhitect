@@ -1,8 +1,20 @@
+// navbar
+
+document.addEventListener("DOMcontentLoaded", () => {
+  onClickMenu();
+});
+
+function onClickMenu() {
+  document.getElementById("menu").classList.toggle("change");
+  document.getElementById("nav").classList.toggle("change");
+}
+
 // carousel
+
 $(".carousel__lista").owlCarousel({
   margin: 10,
   loop: true,
-  autoplay: false,
+  autoplay: true,
   autoplayTimeout: 4000,
   autoplayHoverpause: true,
   responsive: {
@@ -35,14 +47,3 @@ let marker = L.marker([47.494, 19.034]).addTo(map);
 
 // Aos
 AOS.init();
-
-// navbar
-
-document.addEventListener("DOMcontentLoaded", () => {
-  onClickMenu();
-});
-
-function onClickMenu() {
-  document.getElementById("menu").classList.toggle("change");
-  document.getElementById("nav").classList.toggle("change");
-}
